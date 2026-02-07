@@ -1,0 +1,212 @@
+/* ---------- GLOBAL RESET ---------- */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+body{
+  background: linear-gradient(180deg,#eef2ff,#f8fafc);
+}
+
+/* ---------- MAIN CONTAINER ---------- */
+.container{
+  max-width: 520px;
+  margin: auto;
+  padding: 14px;
+}
+
+/* ---------- HEADER ---------- */
+.header{
+  text-align:center;
+  padding:22px 12px;
+  color:white;
+  border-radius:20px;
+  background: linear-gradient(135deg,#2563eb,#1d4ed8);
+  box-shadow:0 10px 25px rgba(0,0,0,0.25);
+  margin-bottom:18px;
+}
+
+.header h1{
+  font-size:26px;
+  font-weight:700;
+}
+
+.header p{
+  margin-top:6px;
+  font-size:14px;
+  opacity:.9;
+}
+
+/* ---------- CARDS ---------- */
+.card{
+  background:white;
+  border-radius:18px;
+  padding:18px;
+  margin-bottom:18px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* ---------- LOCATION ---------- */
+.location-card h2{
+  text-align:center;
+  margin-bottom:12px;
+}
+
+.location-text{
+  text-align:center;
+  color:#555;
+  margin-bottom:14px;
+}
+
+/* CENTER BUTTON */
+.center-btn{
+  display:block;
+  margin:16px auto 4px auto;
+}
+
+/* ---------- PRIMARY START BUTTON ---------- */
+.primary-btn{
+  width:100%;
+  padding:18px;
+  border:none;
+  border-radius:16px;
+  font-size:18px;
+  font-weight:700;
+  color:white;
+  cursor:pointer;
+  background: linear-gradient(145deg,#22c55e,#16a34a);
+  box-shadow:0 8px 0 #15803d, 0 12px 20px rgba(0,0,0,.25);
+  transition:.15s;
+}
+
+/* 3D PRESS EFFECT */
+.primary-btn:active{
+  transform: translateY(6px);
+  box-shadow:0 2px 0 #15803d;
+}
+
+/* ---------- ACTION BUTTON GRID ---------- */
+.actions{
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+
+/* BIG FULL WIDTH BUTTONS */
+.action-btn{
+  width:100%;
+  padding:20px;
+  border:none;
+  border-radius:18px;
+  font-size:18px;
+  font-weight:700;
+  color:white;
+  cursor:pointer;
+  transition:.18s;
+  letter-spacing:.5px;
+}
+
+/* 3D PRESS */
+.action-btn:active{
+  transform: translateY(6px);
+}
+
+/* ---------- BUTTON COLORS ---------- */
+
+.police{
+  background:linear-gradient(145deg,#ef4444,#dc2626);
+  box-shadow:0 8px 0 #991b1b, 0 12px 18px rgba(0,0,0,.3);
+}
+
+.helpline{
+  background:linear-gradient(145deg,#6366f1,#4f46e5);
+  box-shadow:0 8px 0 #3730a3, 0 12px 18px rgba(0,0,0,.3);
+}
+
+.sos{
+  background:linear-gradient(145deg,#f97316,#ea580c);
+  box-shadow:0 8px 0 #9a3412, 0 12px 18px rgba(0,0,0,.3);
+}
+
+.shake{
+  background:linear-gradient(145deg,#0ea5e9,#0284c7);
+  box-shadow:0 8px 0 #075985, 0 12px 18px rgba(0,0,0,.3);
+}
+
+/* ---------- CONTACTS ---------- */
+.contacts h2{
+  margin-bottom:12px;
+}
+
+.contacts input{
+  width:100%;
+  padding:14px;
+  margin-bottom:10px;
+  border-radius:12px;
+  border:1px solid #ddd;
+  font-size:16px;
+}
+
+/* ADD CONTACT BUTTON */
+.add-contact{
+  width:100%;
+  padding:16px;
+  background:linear-gradient(145deg,#10b981,#059669);
+  color:white;
+  font-size:17px;
+  font-weight:700;
+  border:none;
+  border-radius:14px;
+  cursor:pointer;
+  box-shadow:0 8px 0 #047857;
+}
+
+.add-contact:active{
+  transform:translateY(6px);
+  box-shadow:0 2px 0 #047857;
+}
+
+/* CONTACT LIST */
+.favorite-item{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:12px;
+  border-radius:12px;
+  background:#f1f5f9;
+  margin-bottom:10px;
+}
+
+.remove-btn{
+  background:#ef4444;
+  border:none;
+  color:white;
+  padding:8px 12px;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+/* ---------- MOBILE RESPONSIVE ---------- */
+@media (max-width:600px){
+
+  .container{
+    max-width:100%;
+    padding:12px;
+  }
+
+  .header h1{
+    font-size:22px;
+  }
+
+  .action-btn{
+    font-size:17px;
+    padding:22px;
+  }
+
+  .primary-btn{
+    padding:20px;
+    font-size:18px;
+  }
+}
