@@ -3,12 +3,12 @@ import { getAuth, setPersistence, browserLocalPersistence, signInAnonymously } f
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyD23yjFc7DHsLYHrcElMLVhBsYMoSbukMA",
-  authDomain: "women-saftey-ad2fb.firebaseapp.com",
-  projectId: "women-saftey-ad2fb",
-  storageBucket: "women-saftey-ad2fb.firebasestorage.app",
-  messagingSenderId: "768618870010",
-  appId: "1:768618870010:web:f180f006a177bd35eb0543"
+  apiKey: 
+  authDomain: 
+  projectId: 
+  storageBucket: 
+  messagingSenderId: 
+  appId: 
 };
 
 const app = initializeApp(firebaseConfig);
