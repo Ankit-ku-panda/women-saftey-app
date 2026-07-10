@@ -11,3 +11,13 @@ services:
     environment:
       - CHOKIDAR_USEPOLLING=true
     command: sh -c "npm install --silent && npm start"
+
+  ngrok:
+    image: wernight/ngrok
+    environment:
+      - NGROK_AUTHTOKEN=${NGROK_AUTHTOKEN}
+    command: http web:3000
+    depends_on:
+      - web
+    ports:
+      - "4040:4040"

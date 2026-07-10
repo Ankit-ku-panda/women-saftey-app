@@ -95,3 +95,24 @@ docker-compose up
 Notes:
 - The production image uses a multi-stage build and serves the optimized React build with nginx on port 80.
 - The Compose service mounts the project directory and runs `npm start` for development.
+
+Ngrok (expose localhost)
+-------------------------
+
+You can run an `ngrok` tunnel alongside the dev `web` service using Docker Compose. Create a `.env` from `.env.example` and set your `NGROK_AUTHTOKEN`.
+
+```bash
+cp .env.example .env
+# edit .env and set NGROK_AUTHTOKEN
+docker-compose up
+```
+
+The `ngrok` service creates a public URL that tunnels to the `web` service and exposes the ngrok web UI at [http://localhost:4040](http://localhost:4040).
+
+If you prefer to run ngrok separately (production or custom setup), install the official ngrok binary and run:
+
+```bash
+# example: forward port 80 (production nginx)
+ngrok http 80
+```
+
