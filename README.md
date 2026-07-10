@@ -76,3 +76,22 @@ For support or bug reports, please open an issue on the GitHub repository.
 ---
 
 **Made with ❤️ for Women's Safety**
+
+## Docker
+
+Build and run the production image:
+
+```bash
+docker build -t women-safety-app .
+docker run -p 80:80 women-safety-app
+```
+
+For local development with live reload using Docker Compose:
+
+```bash
+docker-compose up
+```
+
+Notes:
+- The production image uses a multi-stage build and serves the optimized React build with nginx on port 80.
+- The Compose service mounts the project directory and runs `npm start` for development.
